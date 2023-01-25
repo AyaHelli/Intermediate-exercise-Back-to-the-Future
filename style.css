@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url(girl.jpg);
+  background-size: cover;
+}
+body .nav {
+  display: flex;
+  padding: 10px;
+  background-color: rgb(47, 0, 255);
+  align-items: center;
+  height: 70px;
+  color: aliceblue;
+}
+body .nav .p:hover {
+  color: darkgrey;
+}
+body .flash {
+  display: flex;
+  justify-content: flex-start;
+  width: 100px;
+  height: 100px;
+}
+body section {
+  display: flex;
+  z-index: 1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-style: italic;
+  color: aliceblue;
+  height: 50vh;
+}
+
+@media screen and (min-width: 340px) and (max-width: 780px) {
+  section p {
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */

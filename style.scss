@@ -1,0 +1,53 @@
+$color:rgb(47, 0, 255);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(girl.jpg);
+    background-size: cover;
+    .nav {
+        display: flex;
+        padding: 10px;
+        background-color: $color;
+        align-items: center;
+        height: 70px;
+        color: aliceblue;
+        .p {
+            &:hover {
+                color: darkgrey;
+            }
+        }
+    }
+    .flash {
+        display: flex;
+        justify-content: flex-start;
+        width: 100px;
+        height: 100px;
+    }
+    section {
+        display: flex;
+        z-index: 1;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+        font-style: italic;
+        color: aliceblue;
+        height: 50vh;
+    }
+}
+
+// 340 -> 780   mobile
+// 781 -> 1100  tablet 
+@media screen and (min-width: 340px) and (max-width: 780px) {
+    section p {
+        font-size: 30px;
+    }
+}
